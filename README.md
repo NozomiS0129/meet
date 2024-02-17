@@ -109,3 +109,7 @@ As a user, I should be able to show a chart with the number of upcoming events i
 Given: User have to search events by typing city names one by one.
 When: Charts are edited if there are any upcoming events.
 Then: User can check visualized event details.
+
+### Serverless functions
+
+In the MEET app, serverless functions play a crucial role, particularly in handling authorization processes. Accessing the Google Calendar API, a protected public API, necessitates a valid access token. AWS Lambda is utilized to facilitate the provision of this access token, ensuring secure access between users and the API. This approach offers several advantages, including reduced costs and scalability.
