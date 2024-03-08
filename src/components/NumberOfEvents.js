@@ -18,7 +18,12 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
 
   return (
     <div id="number-of-events">
-      <input type="text" defaultValue="32" onChange={handleInputChanged} />
+      <input
+        data-testid="number-of-event-input"
+        type="text"
+        defaultValue="32"
+        onChange={handleInputChanged}
+      />
     </div>
   );
 };
