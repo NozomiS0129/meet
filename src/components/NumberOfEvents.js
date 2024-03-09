@@ -7,13 +7,13 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
 
     let errorText;
     if (isNaN(value) || value <= 0) {
-      errorText = "Minimun 1 is requred";
+      errorText = "You must enter a positive number to continue.";
       setErrorAlert(errorText);
     } else {
       setCurrentNOE(value);
       errorText = "";
-      setErrorAlert(errorText);
     }
+    setErrorAlert(errorText);
   };
 
   return (
