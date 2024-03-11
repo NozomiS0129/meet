@@ -7,8 +7,7 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
 
     let errorText;
     if (isNaN(value) || value <= 0) {
-      errorText = "You must enter a positive number to continue.";
-      setErrorAlert(errorText);
+      errorText = "Only positive numbers are allowed";
     } else {
       setCurrentNOE(value);
       errorText = "";
