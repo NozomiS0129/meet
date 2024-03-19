@@ -2,17 +2,19 @@
 
 ## Description
 
-Users can use this application to view upcoming events for a specific city. Users can filter events by city and check the detail by clicking it. This application can be used when there's no internet connection.
+This progressive web app is built for event management, using React and a test-driven development approach. Users can utilize this application to view upcoming events for a specific city and access details by clicking on them. The information for events is fetched from the Google Calendar API.
 
-## Technology
+## Technology Stack
 
-This is a serverless, progressive web application with REACT using test-driven development technique.
+- React
+- Google Calendar API
+- AWS Lambda
+- Jest
+- Jest Cucumber
+- Puppeteer
+- Atatus
 
-## Dependency
-
-the Google Calendar API
-
-## Features
+## Gerkins and User Stories
 
 ### Feature1: Filter Events By City
 
@@ -113,3 +115,11 @@ Then: User can check visualized event details.
 ### Serverless functions
 
 In the MEET app, serverless functions play a crucial role, particularly in handling authorization processes. Accessing the Google Calendar API, a protected public API, necessitates a valid access token. AWS Lambda is utilized to facilitate the provision of this access token, ensuring secure access between users and the API. This approach offers several advantages, including reduced costs and scalability.
+
+## Link to deployed app
+
+https://nozomis0129.github.io/meet/
+
+## MEET
+
+<img width="1319" alt="meet" src="https://github.com/nozomis0129/meet/assets/129555124/8e6bc774-3c27-4d8e-9b08-e9c43046b77e">
